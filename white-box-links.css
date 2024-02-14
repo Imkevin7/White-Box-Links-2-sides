@@ -18,11 +18,11 @@ html h3, body h3 {
 .white-box-links {
   padding: 1em;
 }
-.white-box-links .left .boxes, .white-box-links .right .boxes {
+.white-box-links .left p, .white-box-links .right p {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
 }
-.white-box-links .left .boxes a, .white-box-links .right .boxes a {
+.white-box-links .left p a, .white-box-links .right p a {
   text-decoration: none;
   display: block;
   background: white;
@@ -32,14 +32,15 @@ html h3, body h3 {
   margin: 0.125em;
   color: black;
   transition: background-color 0.4s ease;
+  text-transform: uppercase;
 }
-.white-box-links .left .boxes a:hover, .white-box-links .right .boxes a:hover {
+.white-box-links .left p a:hover, .white-box-links .right p a:hover {
   background: black;
   color: white;
 }
 
 @media screen and (min-width: 600px) {
-  .white-box-links .right .boxes, .white-box-links .left .boxes {
+  .white-box-links .right p, .white-box-links .left p {
     grid-template-columns: repeat(2, 1fr);
   }
 }
@@ -51,7 +52,7 @@ html h3, body h3 {
     margin: auto;
     gap: 5em;
   }
-  .white-box-links .boxes {
+  .white-box-links .left p, .white-box-links .right p {
     grid-template-columns: repeat(2, 1fr);
   }
 }
