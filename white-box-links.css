@@ -1,0 +1,57 @@
+html, body {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+html p, body p {
+  font-size: 1.125em;
+  line-height: 1.65em;
+  color: #333333;
+  font-weight: 300;
+}
+html h3, body h3 {
+  color: #c22033;
+  font-weight: 500;
+  font-size: 1.25em;
+}
+
+.white-box-links {
+  padding: 1em;
+}
+.white-box-links .left .boxes, .white-box-links .right .boxes {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+.white-box-links .left .boxes a, .white-box-links .right .boxes a {
+  text-decoration: none;
+  display: block;
+  background: white;
+  border: 1px solid #ccc;
+  text-align: center;
+  padding: 20px 40px;
+  margin: 0.125em;
+  color: black;
+  transition: background-color 0.4s ease;
+}
+.white-box-links .left .boxes a:hover, .white-box-links .right .boxes a:hover {
+  background: black;
+  color: white;
+}
+
+@media screen and (min-width: 600px) {
+  .white-box-links .right .boxes, .white-box-links .left .boxes {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 900px) {
+  .white-box-links {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 80em;
+    margin: auto;
+    gap: 5em;
+  }
+  .white-box-links .boxes {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
